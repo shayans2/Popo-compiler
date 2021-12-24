@@ -4,10 +4,12 @@ Popo is a simple compiler only for educational purposes written in Python, it co
 
 ## How does it work?
 
-Simply check out the photo below! If you want to know more, please check Resources section.
+The compiler will work in three stages: (1) lexing, which breaks the input code up into small pieces called tokens, (2) parsing, which verifies that the tokens are in an order that our language allows, and (3) emitting, which produces the appropriate C code.
 
 ![Compiler Steps](./images/compilersteps.png)
 ![Tokens](./images/tokens.png)
+
+If you want to know more, please check Resources section.
 
 ## What it doesn't support
 
