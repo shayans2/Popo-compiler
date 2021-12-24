@@ -4,7 +4,7 @@ Popo is a simple compiler only for educational purposes written in Python, it co
 
 ## How does it work?
 
-Simply check out the photo below! If you want to know more, please check Resources.
+Simply check out the photo below! If you want to know more, please check Resources section.
 
 ![Compiler Steps](./images/compilersteps.png)
 ![Tokens](./images/tokens.png)
@@ -45,7 +45,7 @@ Exact text match of:
 LABEL, GOTO, PRINT, INPUT, LET, IF, THEN, ENDIF, WHILE, REPEAT, ENDWHILE
 ```
 
-## Resource
+## Resources
 
 Thanks to [Austin Henley](https://github.com/AZHenley) for his great [article](http://web.eecs.utk.edu/~azh/blog/teenytinycompiler1.html)
 
