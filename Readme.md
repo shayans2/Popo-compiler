@@ -1,10 +1,11 @@
-# Popo Compiler
+# Popo 🍑 Compiler
 
 Popo is a simple compiler only for educational purposes written in Python, it compiles a basic lang to C.
 
 ## How does it work?
 
 Simply check out the photo below! If you want to know more, please check Resources.
+
 ![Compiler Steps](./images/compilersteps.png)
 ![Tokens](./images/tokens.png)
 
