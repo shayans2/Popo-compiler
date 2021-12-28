@@ -2,6 +2,16 @@
 
 Popo is a simple compiler only for educational purposes written in Python, it compiles a basic lang to C.
 
+## 🚀 Fire it up!
+
+You need to have Python3 installed, then run the command below:
+
+```
+python3 index.py hello.popo
+```
+
+index.py takes any file that ends with .popo as an input and compiles it out to C.
+
 ## How does it work?
 
 The compiler will work in three stages: (1) lexing, which breaks the input code up into small pieces called tokens, (2) parsing, which verifies that the tokens are in an order that our language allows, and (3) emitting, which produces the appropriate C code.
@@ -10,6 +20,25 @@ The compiler will work in three stages: (1) lexing, which breaks the input code 
 ![Tokens](./images/tokens.png)
 
 If you want to know more, please check Resources section.
+
+## Grammers
+
+```
+program ::= {statement}
+statement ::= "PRINT" (expression | string) nl
+            | "IF" comparison "THEN" nl {statement} "ENDIF" nl
+            | "WHILE" comparison "REPEAT" nl {statement} "ENDWHILE" nl
+            | "LABEL" ident nl
+            | "GOTO" ident nl
+            | "LET" ident "=" expression nl
+            | "INPUT" ident nl
+comparison ::= expression (("==" | "!=" | ">" | ">=" | "<" | "<=") expression)+
+expression ::= term {( "-" | "+" ) term}
+term ::= unary {( "/" | "*" ) unary}
+unary ::= ["+" | "-"] primary
+primary ::= number | ident
+nl ::= '\n'+
+```
 
 ## What it doesn't support
 
